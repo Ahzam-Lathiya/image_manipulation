@@ -30,6 +30,10 @@
                                                 </th>
                                                 <th scope="col"
                                                     class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                                    Token
+                                                </th>
+                                                <th scope="col"
+                                                    class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                                                     Last used
                                                 </th>
                                                 <th scope="col" class="relative px-6 py-3">
@@ -42,6 +46,9 @@
                                                 <tr>
                                                     <td class="px-6 py-4 whitespace-nowrap">
                                                         {{$token->name}}
+                                                    </td>
+                                                    <td class="px-6 py-4 whitespace-nowrap">
+                                                        {{$token->token}}
                                                     </td>
                                                     <td class="px-6 py-4 whitespace-nowrap">
                                                         {{$token->last_used_at ? $token->last_used_at->diffForHumans() : ''}}

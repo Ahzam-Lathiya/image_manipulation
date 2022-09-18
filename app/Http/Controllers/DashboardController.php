@@ -22,7 +22,12 @@ class DashboardController extends Controller
     public function dashboard(Request $request)
     {
         $user = $request->user();
-
+        /*
+        echo '<pre>';
+        print_r($user->tokens);
+        echo '</pre>';
+        exit;
+		*/
         return view('dashboard', [
             'tokens' => $user->tokens
         ]);
